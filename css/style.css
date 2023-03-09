@@ -1,6 +1,13 @@
 /* Variables */
 :root {
-
+--primary: #ff6348;
+--gray1: #363b46;
+--gray2: #efefef;
+--gray3: #c0b3b3;
+--font-family: "Montserrat", "sans-serif";
+--box-shadow: 0px 6px 9px 0px rgb(0 0 0 / 15%);
+--box-shadow-nav: 0 2px 18px 0 rgb(0 0 0 / 22%);
+--text-color: #444;
 }
 
 /* Global css */
@@ -32,15 +39,114 @@ li {
     cursor: pointer;
 }
 
+.red {
+    color: var(--primary);
+    font-weight: bold;
+    font-style: italic;
+}
+
+#bill-title {
+    color: green;
+}
+
 /* Style */
 
 /* navbar */
+.navbar {
+    height: 50px;
+    background-color: white;
+    box-shadow: var(--box-shadow-nav);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    color: var(--primary);
+}
+
+.ul-navbar {
+display: flex;
+align-items: center;
+}
+
+.link-ul {
+    margin: 0 20px;
+}
+
+.link-ul:hover {
+    color: black;
+    transition: 1s;
+}
 
 
 /* Header */
+.header-container {
+    margin: 50px 0;
+}
 
+.date-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 25px;
+    border-left: 1700px solid var(--gray1);
+    border-right: 50px solid var(--gray1);
+    padding-right: 10px;
+    text-align: center;
+}
+
+.title-container {
+    width: auto;
+    height: auto;
+    margin: 5px 25px 25px 25px;
+    background-color: var(--gray1);
+}
+
+.title-page {
+    background-color: var(--gray2);
+    color: black;
+    width: 250px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+.title-page-second {
+    color: var(--primary);
+}
 
 /* article */
 
+.article-container {
+    background-color: var(--gray3);
+    margin: 25px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-article {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.article-div {
+    margin: 50px 0;
+}
+
+.image-article {
+    float: left;
+    width: 390px;
+    height: auto;
+    margin: 10px 25px 10px 10px;
+}
+
+.article-column {
+    column-count: 2;
+    text-align: justify;
+}
 
 /* Footer */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-copyright {
+    margin-left: 25px;
+}
